@@ -13,12 +13,7 @@
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
+@media screen and (min-width: 768px) {
   .panel-form .container .form {
     display: flex;
     flex-direction: column;
