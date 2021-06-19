@@ -26,12 +26,13 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+  padding-bottom: 32px;
 }
 
 .panel-speakers .speaker {
   width: 250px;
+  min-height: 316px;
   background-color: white;
-  margin-bottom: 32px;
   padding: 18px;
   border-radius: 10px;
 }
