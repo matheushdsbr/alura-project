@@ -126,14 +126,14 @@
   <section class="panel-form" id="panel-form">
     <div class="container">
       <h2 class="title">Seus dados</h2>
-      <form onsubmit="showAlert()" class="form">
+      <form class="form" data-submit-form>
         <div class="field">
           <label>Nome</label>
-          <input id="name" type="text" class="field-input" required />
+          <input type="text" class="field-input" data-input-name required />
         </div>
         <div class="field">
           <label>E-mail</label>
-          <input id="email" type="email" class="field-input" required />
+          <input type="email" class="field-input" data-input-email required />
         </div>
         <div class="button-place">
           <button type="submit" class="button">REALIZAR INSCRIÇÃO</button>

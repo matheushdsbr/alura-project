@@ -14,8 +14,13 @@ scrollSmooth('a[href*=panel-about]');
 scrollSmooth('a[href*=panel-speakers]');
 scrollSmooth('a[href*=panel-form]');
 
-const showAlert = () => {
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  alert(`${name}! Seus dados foram enviados com sucesso! \n email: ${email}`);
+const showAlert = (event) => {
+  event.preventDefault();
+
+  const name = document.querySelector('[data-input-name]').value;
+  const email = document.querySelector('[data-input-email]').value;
+  alert(`Olá, ${name}! Seus dados foram enviados com sucesso! \n E-mail: ${email}`);
 }
+
+const submitForm = document.querySelector('[data-submit-form]');
+submitForm.addEventListener('submit', showAlert);
