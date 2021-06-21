@@ -1,2 +1,4 @@
 # css folder
 css
+*.css
+*.css.map

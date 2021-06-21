@@ -2,7 +2,7 @@
   display: inline-block;
   padding: 25px 50px;
   margin: 5px;
-  background-color: #48A3A6;
+  background-color: #44bd32;
   border-radius: 8px;
   box-shadow: 1px 1px 5px black;
   text-decoration: none;
@@ -15,5 +15,25 @@
 
   &:hover {
     filter: brightness(0.9);
+  }
+
+  &--header:hover {
+    animation: clickEffect .5s;
+  }
+
+  &--footer:hover {
+    animation: clickEffect .5s infinite;
+  }
+}
+
+@keyframes clickEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
